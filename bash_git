@@ -7,7 +7,6 @@
       local branch=$(__git_ps1 "%s")
       [[ $branch ]] && echo "[$branch$(parse_git_dirty)]"
     }
-    export PS1='\[\033[1;33m\]\w\[\033[0m\]\r\n$ '
    fi
 
    source ~/.gh-dotfiles/bash_git_completion
@@ -27,5 +26,3 @@ alias ggi="git grep -ni"
  
 complete -o default -o nospace -F _git_branch gb
 complete -o default -o nospace -F _git_checkout gco
-
-
