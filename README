@@ -1,4 +1,4 @@
-bash config files for mac osX 10.6
+Bash config useful to Mac OS X and any linux distribution...
 
 To install run
 git clone git://github.com/TheNaoX/gh-dotfiles.git .gh-dotfiles
@@ -11,3 +11,5 @@ Features:
 * mvimt alias added to add a new tab on macvim
 * Git repo
 * Git branch on command line
+
+Forked from Federico Ramallo's github account, https://github.com/framallo
