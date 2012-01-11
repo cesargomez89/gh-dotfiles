@@ -1,7 +1,11 @@
-Bash config useful to Mac OS X and any linux distribution...
+# TheNaoX/Dotfiles
+
+## Bash config useful to Mac OS X and any linux distribution...
 
 To install run
-git clone git://github.com/TheNaoX/gh-dotfiles.git .gh-dotfiles
+ `git clone git://github.com/TheNaoX/gh-dotfiles.git .gh-dotfiles`
+ `cd .gh-dotfiles`
+ `./install.sh`
 
 
 Features:
