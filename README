@@ -1,7 +1,7 @@
 bash config files for mac osX 10.6
 
 To install run
-git clone git://github.com/framallo/gh-dotfiles.git .gh-dotfiles
+git clone git://github.com/TheNaoX/gh-dotfiles.git .gh-dotfiles
 
 
 Features:
@@ -10,3 +10,4 @@ Features:
 * history size increased
 * mvimt alias added to add a new tab on macvim
 * Git repo
+* Git branch on command line
