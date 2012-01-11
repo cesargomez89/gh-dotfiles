@@ -3,14 +3,12 @@
 
 To install run
  `git clone git://github.com/TheNaoX/gh-dotfiles.git .gh-dotfiles`
-Then get inside the directory...
  `cd .gh-dotfiles`
-And run the install file
  `./install.sh`
 
 ### And then your iTerm or linux terminal will looks like this:
 
- ![sample.png](img/sample.png)
+ ![Linux Terminal with dotfiles](http://local.twitpicproxy.com/web1/img/493869042-bc9e0687272e52333305313216e3ee30.4f0db908-scaled.png)
 
 Features:
  * Ctrl + left/right arrows move forward/backward a word on bash
