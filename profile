@@ -19,7 +19,15 @@ export HISTCONTROL=ignoreboth
 # show current branch on shell
 source ~/.gh-dotfiles/bash_git
 source ~/.gh-dotfiles/task_completion.sh
-source ~/.gh-dotfiles/git-config.bash
+
+BLACK="\[\033[0;38m\]"
+YELLOW="\[\033[1;33m\]"
+RED="\[\033[0;31m\]"
+RED_BOLD="\[\033[01;31m\]"
+BLUE="\[\033[01;34m\]"
+GREEN="\[\033[0;32m\]"
+
+export PS1="\u $RED\h $GREEN\$(parse_git_branch) $BLACK\w\n\$ "
 
 # add short cut keys for terminal app
 # Ctrl left   right word
@@ -33,7 +41,7 @@ alias r="rails"
 
 # vim alias
 alias mvimt="mvim --remote-tab"
-alias v="open -a MacVim"
+alias v="gvim"
 
 # task alias
 alias t="task"

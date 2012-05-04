@@ -1,15 +1,15 @@
-   function parse_git_dirty {
-     git diff --quiet HEAD &>/dev/null
-     [[ $? == 1 ]] && echo "⚡"
-   }
-   if [ -n  __git_ps1 ]; then
-    function parse_git_branch {
-      local branch=$(__git_ps1 "%s")
-      [[ $branch ]] && echo "[$branch$(parse_git_dirty)]"
-    }
-   fi
+function parse_git_dirty {
+  git diff --quiet HEAD &>/dev/null
+    [[ $? == 1 ]] && echo "⚡"
+}
+if [ -n  __git_ps1 ]; then
+function parse_git_branch {
+  local branch=$(__git_ps1 "%s")
+    [[ $branch ]] && echo " $branch$(parse_git_dirty) "
+}
+fi
 
-   source ~/.gh-dotfiles/bash_git_completion
+source ~/.gh-dotfiles/bash_git_completion
 
 alias g='git'
 alias gs='git status'
@@ -23,6 +23,6 @@ alias gd="git diff"
 alias gg="git grep --color -n"
 alias ggi="git grep -ni"
 
- 
+
 complete -o default -o nospace -F _git_branch gb
 complete -o default -o nospace -F _git_checkout gco
