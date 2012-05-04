@@ -27,7 +27,7 @@ RED_BOLD="\[\033[01;31m\]"
 BLUE="\[\033[01;34m\]"
 GREEN="\[\033[0;32m\]"
 
-export PS1="\u $RED\h $GREEN\$(parse_git_branch) $BLACK\w\n\$ "
+export PS1="\u $RED\h $BLACK\W $GREEN\$(parse_git_branch)$BLACK\n\$ "
 
 # add short cut keys for terminal app
 # Ctrl left   right word
