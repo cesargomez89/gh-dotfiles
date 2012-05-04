@@ -11,7 +11,7 @@ To install run
 
 ### And then your iTerm or linux terminal will looks like this:
 
- ![Linux Terminal with dotfiles](http://dl.dropbox.com/u/56777664/Linux%20terminal%20sample.png)
+ ![Linux Terminal with dotfiles](https://fbcdn-sphotos-a.akamaihd.net/hphotos-ak-ash3/s720x720/546479_441620345851600_100000109158461_1811792_1417446169_n.jpg)
 
 Features:
 
