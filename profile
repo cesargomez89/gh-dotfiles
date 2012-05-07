@@ -48,6 +48,7 @@ alias r="rails"
 # vim alias
 alias mvimt="mvim --remote-tab"
 alias v="gvim"
+alias n="nautilus . &"
 
 # task alias
 alias t="task"
