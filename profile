@@ -20,20 +20,16 @@ export HISTCONTROL=ignoreboth
 source ~/.gh-dotfiles/bash_git
 source ~/.gh-dotfiles/task_completion.sh
 
+BRANCH_COLOR="\[\033[42;30m\]"
+ARROW_BRANCH="\[\033[40;32m\]⮀"
 BLACK="\[\033[0;38m\]"
-YELLOW="\[\033[1;33m\]"
-RED="\[\033[0;31m\]"
-RED_BOLD="\[\033[01;31m\]"
-GREEN="\[\033[0;32m\]"
-GREEN_BOLD="\[\033[1;32m\]"
-PURPLE="\[\033[0;34m\]"
-PURPLE_BOLD="\[\033[1;34m\]"
-PINK="\[\033[0;35m\]"
-PINK_BOLD="\[\033[1;35m\]"
-BLUE="\[\033[0;36m\]"
-BLUE_BOLD="\[\033[1;36m\]"
+USER_INFO_ARROW="\[\033[47;30m\]⮀"
+DIRECTORY_COLOR="\[\033[47;30m\]"
+DIRECTORY_ARROW="\[\033[49;37m\]⮀"
+PROMPT_ARROW="\[\033[49;30m\]⮀"
+PROMPT_COLOR="\[\033[40;33m\]"
 
-export PS1="\u at $RED_BOLD\h $BLUE_BOLD\W$BLACK $GREEN_BOLD\$(parse_git_branch)$BLACK\n\$ "
+export PS1="$BRANCH_COLOR\$(parse_git_branch)$ARROW_BRANCH$PROMPT_COLOR \u ⮁ \h $USER_INFO_ARROW$DIRECTORY_COLOR \W $DIRECTORY_ARROW\n$PROMPT_COLOR\$$PROMPT_ARROW$BLACK"
 
 # add short cut keys for terminal app
 # Ctrl left   right word
@@ -47,7 +43,7 @@ alias r="rails"
 
 # vim alias
 alias mvimt="mvim --remote-tab"
-alias v="gvim"
+alias v="mvim"
 alias n="nautilus . &"
 
 # task alias
@@ -59,6 +55,7 @@ alias fs="fossil status"
 alias fss="fossil sync"
 alias fsas="fossil all sync"
 alias fsd="fossil diff"
+alias chupamela="echo 'CHUPAMELA CHINO'"
 
 export PATH=$PATH:~/.gh-dotfiles/bin
 
