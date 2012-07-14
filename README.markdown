@@ -7,11 +7,14 @@ To install run
 
  `cd .gh-dotfiles`
 
+Open the current directory and install the fonts and the iTerm colors that are located inside this repo.
+I recomend to use "Menlo for powerline".
+
  `./install.sh`
 
 ### And then your iTerm or linux terminal will looks like this:
 
- ![Linux Terminal with dotfiles](https://fbcdn-sphotos-a.akamaihd.net/hphotos-ak-snc7/303420_443701365643498_100000109158461_1817022_1040907456_n.jpg)
+ ![Linux Terminal with dotfiles](https://fbcdn-sphotos-a.akamaihd.net/hphotos-ak-ash3/s720x720/532577_490776674269300_933379747_n.jpg)
 
 Features:
 
