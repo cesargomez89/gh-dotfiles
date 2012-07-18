@@ -65,3 +65,4 @@ export EDITOR=vim
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
+alias pairing='git config --global user.name "Antonio Chavez + Daniel Lopez" ; git config --global user.email "cavjzz@gmail.com + daniel.lopez@tangosource.com" '
