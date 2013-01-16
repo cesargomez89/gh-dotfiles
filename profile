@@ -42,8 +42,7 @@ bind -f ~/.gh-dotfiles/bash_bindings
 alias r="rails"
 
 # vim alias
-alias mvimt="mvim --remote-tab"
-alias v="mvim"
+alias v="gvim"
 alias n="nautilus . &"
 
 # task alias

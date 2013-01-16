@@ -22,7 +22,7 @@ alias gm='git merge'
 alias gd="git diff"
 alias gg="git grep --color -n"
 alias ggi="git grep -ni"
-alias gk="gitk --all &"
+alias gk="gitk --all & 2>/dev/null"
 
 
 complete -o default -o nospace -F _git_branch gb
