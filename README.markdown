@@ -21,8 +21,7 @@ Features:
 *   Ctrl + left/right arrows move forward/backward a word on bash
 *   Up/ down arrow partial search in history
 *   history size increased
-*   mvimt alias added to add a new tab on macvim
+*   'v' alias to open macvim or gvim
+*   'gk' open the gitk tool
 *   Git repo
 *   Git branch on command line
-
-Forked from Federico Ramallo's github account, https://github.com/framallo
