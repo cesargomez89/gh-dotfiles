@@ -14,7 +14,7 @@ I recomend to use "Menlo for powerline".
 
 ### And then your iTerm or linux terminal will looks like this:
 
- ![Linux Terminal with dotfiles](http://d3j5vwomefv46c.cloudfront.net/photos/large/692939353.png?key=714496&Expires=1358357069&Key-Pair-Id=APKAIYVGSUJFNRFZBBTA&Signature=UAGwk5qdvt0Gxh9KweSrW44RAByd9D-XB8Eg6WsZA8Cd8yyEMIzs8CnT-KhrWl7yu1rBCZia5sqoSWOFQcM0MrVVu6PcSeeiJYsqn-BeLwWiRZWwTc1sFQf9Hr~I1fxEVqhtpsTKx-4o~VsuHnRoYZ0Cka2z9saYAFC5JvrYT44_)
+ ![Linux Terminal with dotfiles](http://s9.postimage.org/o7zztn9q7/Terminal_refactor.png)
 
 Features:
 
