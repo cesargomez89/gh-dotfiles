@@ -66,3 +66,6 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 
 alias pairing='git config --global user.name "Antonio Chavez + Daniel Lopez" ; git config --global user.email "cavjzz@gmail.com + daniel.lopez@tangosource.com" '
 alias single='git config --global user.name "Antonio Chavez" ; git config --global user.email "cavjzz@gmail.com" '
+
+# Ruby aliases
+alias b="bundle exec"
