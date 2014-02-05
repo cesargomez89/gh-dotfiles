@@ -29,7 +29,7 @@ DIRECTORY_ARROW="\[\033[42;37m\]⮀"
 PROMPT_ARROW="\[\033[49;30m\]⮀"
 PROMPT_COLOR="\[\033[49;33m\]"
 
-export PS1="$PROMPT_COLOR\u ⮁ \h $USER_INFO_ARROW$DIRECTORY_COLOR \W $DIRECTORY_ARROW$BRANCH_COLOR ⭠ \$(parse_git_branch) $ARROW_BRANCH\n$PROMPT_COLOR\$$BLACK "
+export PS1="$PROMPT_COLOR [\u] ⮁  $USER_INFO_ARROW$DIRECTORY_COLOR \W $DIRECTORY_ARROW$BRANCH_COLOR ⭠ \$(parse_git_branch) $ARROW_BRANCH\n$PROMPT_COLOR\$$BLACK "
 
 # add short cut keys for terminal app
 # Ctrl left   right word
@@ -41,20 +41,20 @@ bind -f ~/.gh-dotfiles/bash_bindings
 # rails alias
 alias r="rails"
 
+#rake db
+alias rdbc="rake db:create"
+alias rdbd="rake db:drop"
+alias rdbm="rake db:migrate"
+alias rdbmr="rake db:migrate:reset"
+
 # vim alias
 alias v="gvim"
-alias n="nautilus . &"
 
 # task alias
 alias t="task"
 
-# fossil alias
-alias f="fossil"
-alias fs="fossil status"
-alias fss="fossil sync"
-alias fsas="fossil all sync"
-alias fsd="fossil diff"
-alias chupamela="echo 'CHUPAMELA CHINO'"
+# task alias
+alias c="clear"
 
 export PATH=$PATH:~/.gh-dotfiles/bin
 
@@ -64,8 +64,7 @@ export EDITOR=vim
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
-alias pairing='git config --global user.name "Antonio Chavez + Daniel Lopez" ; git config --global user.email "cavjzz@gmail.com + daniel.lopez@tangosource.com" '
-alias single='git config --global user.name "Antonio Chavez" ; git config --global user.email "cavjzz@gmail.com" '
+alias single='git config --global user.name "Cesar Gomez" ; git config --global user.email "cesargomez89@gmail.com" '
 
 # Ruby aliases
 alias b="bundle exec"
