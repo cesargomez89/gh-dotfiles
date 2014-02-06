@@ -41,6 +41,12 @@ bind -f ~/.gh-dotfiles/bash_bindings
 # rails alias
 alias r="rails"
 
+#directories
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+
 #rake db
 alias rdbc="rake db:create"
 alias rdbd="rake db:drop"
@@ -68,3 +74,20 @@ alias single='git config --global user.name "Cesar Gomez" ; git config --global 
 
 # Ruby aliases
 alias b="bundle exec"
+
+#functions
+function feature() {
+  story_title=$1
+  story_title=${story_title// /-}
+  story_title=${story_title//[.,]/}
+
+  git checkout -b feature/$story_title
+}
+
+function hotfix() {
+  story_title=$1
+  story_title=${story_title// /-}
+  story_title=${story_title//[.,]/}
+
+  git checkout -b hotfix/$story_title
+}
