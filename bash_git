@@ -1,6 +1,6 @@
 function parse_git_dirty {
   git diff --quiet HEAD &>/dev/null
-    [[ $? == 1 ]] && echo " ⚡"
+    [[ $? == 1 ]] && echo " -> ⚡"
 }
 if [ -n  __git_ps1 ]; then
 function parse_git_branch {

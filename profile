@@ -14,7 +14,6 @@ shopt -s histappend
 # don't put duplicate lines in the history and ignore same sucessive entries. 
 export HISTCONTROL=ignoreboth 
 
-
 # GIT ------------------------------------
 # show current branch on shell
 source ~/.gh-dotfiles/bash_git
@@ -29,7 +28,7 @@ DIRECTORY_ARROW="\[\033[42;37m\]⮀"
 PROMPT_ARROW="\[\033[49;30m\]⮀"
 PROMPT_COLOR="\[\033[49;33m\]"
 
-export PS1="$PROMPT_COLOR [\u] ⮁  $USER_INFO_ARROW$DIRECTORY_COLOR \W $DIRECTORY_ARROW$BRANCH_COLOR ⭠ \$(parse_git_branch) $ARROW_BRANCH\n$PROMPT_COLOR\$$BLACK "
+export PS1="$DIRECTORY_COLOR .\u. $PROMPT_COLOR ⮁  $USER_INFO_ARROW$DIRECTORY_COLOR \W $DIRECTORY_ARROW$BRANCH_COLOR ⭠ \$(parse_git_branch) $ARROW_BRANCH\n$PROMPT_COLOR\$$BLACK "
 
 # add short cut keys for terminal app
 # Ctrl left   right word
@@ -57,10 +56,10 @@ alias rdbmr="rake db:migrate:reset"
 alias v="gvim"
 
 # task alias
-alias t="task"
-
-# task alias
 alias c="clear"
+
+# jump alias
+alias j='jump'
 
 export PATH=$PATH:~/.gh-dotfiles/bin
 
@@ -70,7 +69,7 @@ export EDITOR=vim
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
-alias single='git config --global user.name "Cesar Gomez" ; git config --global user.email "cesargomez89@gmail.com" '
+alias git_config='git config --global user.name "Cesar Gomez" ; git config --global user.email "cesargomez89@gmail.com" '
 
 # Ruby aliases
 alias b="bundle exec"
